@@ -1,0 +1,164 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2650 2550 550  450 
+U 55880F70
+F0 "PowerSupply" 60
+F1 "PS.sch" 60
+F2 "VCC" U R 3200 2650 60 
+F3 "+12V" U R 3200 2800 60 
+$EndSheet
+$Sheet
+S 2450 3350 750  1050
+U 55880F8C
+F0 "MotorDriver" 60
+F1 "MotorDriver.sch" 60
+F2 "+12V" U R 3200 3500 60 
+F3 "PWM01" I R 3200 3650 60 
+F4 "MA1" I R 3200 3900 60 
+F5 "MA2" I R 3200 4000 60 
+F6 "PWM02" I R 3200 3750 60 
+F7 "MB1" I R 3200 4150 60 
+F8 "MB2" I R 3200 4250 60 
+$EndSheet
+$Sheet
+S 3750 3350 950  1050
+U 55880FD4
+F0 "Controller" 60
+F1 "Control.sch" 60
+F2 "PWM01" O L 3750 3650 60 
+F3 "PWM02" O L 3750 3750 60 
+F4 "RX" I R 4700 4150 60 
+F5 "TX" O R 4700 4250 60 
+F6 "VCC" U L 3750 3450 60 
+F7 "ADC" I R 4700 3800 60 
+F8 "CONTRAS" O R 4700 3700 60 
+F9 "MA1" O L 3750 3900 60 
+F10 "MA2" O L 3750 4000 60 
+F11 "MB1" O L 3750 4150 60 
+F12 "MB2" O L 3750 4250 60 
+F13 "GND" U R 4700 3450 60 
+$EndSheet
+$Sheet
+S 5350 3350 550  1050
+U 55880FEF
+F0 "Sensor" 60
+F1 "Sensor.sch" 60
+F2 "ADC" O L 5350 3800 60 
+F3 "VCC" U L 5350 3450 60 
+F4 "CONTRAS" I L 5350 3700 60 
+$EndSheet
+$Sheet
+S 3750 4800 550  300 
+U 558810F4
+F0 "Debugger" 60
+F1 "Debugger.sch" 60
+F2 "RX" O R 4300 4900 60 
+F3 "TX" I R 4300 5000 60 
+F4 "VCC" U L 3750 4900 60 
+$EndSheet
+Wire Wire Line
+	3600 3450 3750 3450
+Wire Wire Line
+	3750 3650 3200 3650
+Wire Wire Line
+	3200 3750 3750 3750
+Wire Wire Line
+	3750 3900 3200 3900
+Wire Wire Line
+	3200 4000 3750 4000
+Wire Wire Line
+	3750 4150 3200 4150
+Wire Wire Line
+	3200 4250 3750 4250
+Wire Wire Line
+	3200 3500 3300 3500
+Wire Wire Line
+	3300 3500 3300 2800
+Wire Wire Line
+	3300 2800 3200 2800
+Wire Wire Line
+	3200 2650 5250 2650
+Wire Wire Line
+	3600 2650 3600 4900
+Wire Wire Line
+	3600 4900 3750 4900
+Connection ~ 3600 3450
+Wire Wire Line
+	4300 4900 4850 4900
+Wire Wire Line
+	4850 4900 4850 4150
+Wire Wire Line
+	4850 4150 4700 4150
+Wire Wire Line
+	4700 4250 4750 4250
+Wire Wire Line
+	4750 4250 4750 5000
+Wire Wire Line
+	4750 5000 4300 5000
+Wire Bus Line
+	4700 3800 5350 3800
+Wire Wire Line
+	4700 3700 5350 3700
+Wire Wire Line
+	5350 3450 5250 3450
+Wire Wire Line
+	5250 3450 5250 2650
+Connection ~ 3600 2650
+$Comp
+L GND #PWR01
+U 1 1 558D10D4
+P 4900 3450
+F 0 "#PWR01" H 4900 3450 30  0001 C CNN
+F 1 "GND" H 4900 3380 30  0001 C CNN
+F 2 "" H 4900 3450 60  0000 C CNN
+F 3 "" H 4900 3450 60  0000 C CNN
+	1    4900 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 3450 4700 3450
+$EndSCHEMATC
