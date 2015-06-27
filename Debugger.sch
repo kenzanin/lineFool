@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:main-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +30,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:main-cache
+LIBS:tcrt5000
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -51,7 +53,7 @@ U 1 1 558DA3D1
 P 1650 3650
 F 0 "P8" H 1650 3850 50  0000 C CNN
 F 1 "SERIAL" V 1750 3650 50  0000 C CNN
-F 2 "" H 1650 3650 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 1650 3650 60  0001 C CNN
 F 3 "" H 1650 3650 60  0000 C CNN
 	1    1650 3650
 	0    -1   -1   0   
@@ -62,37 +64,15 @@ U 1 1 558DA47F
 P 2300 3650
 F 0 "P9" H 2300 3800 50  0000 C CNN
 F 1 "POWER" V 2400 3650 50  0000 C CNN
-F 2 "" H 2300 3650 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2300 3650 60  0001 C CNN
 F 3 "" H 2300 3650 60  0000 C CNN
 	1    2300 3650
 	0    -1   -1   0   
 $EndComp
-Text HLabel 1550 4050 3    60   Output ~ 0
+Text HLabel 1650 4050 3    60   Output ~ 0
 RX
-Text HLabel 1650 4050 3    60   Input ~ 0
+Text HLabel 1550 4050 3    60   Input ~ 0
 TX
-$Comp
-L GND #PWR014
-U 1 1 558DA613
-P 1750 4050
-F 0 "#PWR014" H 1750 4050 30  0001 C CNN
-F 1 "GND" H 1750 3980 30  0001 C CNN
-F 2 "" H 1750 4050 60  0000 C CNN
-F 3 "" H 1750 4050 60  0000 C CNN
-	1    1750 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR015
-U 1 1 558DA627
-P 2350 4050
-F 0 "#PWR015" H 2350 4050 30  0001 C CNN
-F 1 "GND" H 2350 3980 30  0001 C CNN
-F 2 "" H 2350 4050 60  0000 C CNN
-F 3 "" H 2350 4050 60  0000 C CNN
-	1    2350 4050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2350 3850 2350 4050
 Wire Wire Line
@@ -102,7 +82,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 3850 1550 4050
 Text HLabel 2250 4050 3    60   UnSpc ~ 0
-VCC
++3.3V
 Wire Wire Line
 	2250 3850 2250 4050
 $Bitmap
@@ -4662,4 +4642,8 @@ Text Notes 650  1500 0    60   ~ 0
  ESP8266 ESP11 ESP-11 WIFI MODULE SERIAL WIFI FOR ARDUINO MINSYS, DLL 
 Text Notes 2200 2050 0    60   ~ 12
 AWAS 3.3V
+Text HLabel 2350 4050 3    60   UnSpc ~ 0
+GND
+Text HLabel 1750 4050 3    60   UnSpc ~ 0
+GND
 $EndSCHEMATC
