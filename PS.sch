@@ -11,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -36,9 +35,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 6
-Title ""
-Date ""
-Rev ""
+Title "KENZANIN LINEFOLLOWER"
+Date "2015-06-28"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -5007,45 +5006,30 @@ C3 30 84 98 08 21 CE F9 61 18 3E 7E FC B8 C5 D5 65 99 B7 B2 33 16 A3 4B 4A 29 84
 57 95 46 EA BE A5 39 0F 0F A7 9C B3 B3 1E 91 3C A5 84 B9 0D 14 02 55 05 80 83 20 C6 34 4D 23 A5 
 70 CE 10 4A 52 8A C6 CE 99 24 21 D4 FD 7E 5F 16 8B 0E CD 34 4D C6 AE F4 63 6B ED 30 8E 7D DF 03 
 FE CD 99 20 1E EE F7 FB 97 97 17 C6 98 77 1E C0 C7 36 ED 7D B9 5C A0 E9 2A 8A 45 F9 FF 03 C7 AE 
-FC 30 55 0D 68 40 00 00 00 00 49 45 4E 44 AE 42 60 82 09 
+FC 30 55 0D 68 40 00 00 00 00 49 45 4E 44 AE 42 60 82 E7 
 EndData
 $EndBitmap
 Text Notes 600  2450 0    60   ~ 0
 Board size: 45 mm x 22 mm
 $Comp
-L CONN_01X02 P6
+L CONN_01X02 P7
 U 1 1 558D360C
 P 900 2700
-F 0 "P6" H 900 2850 50  0000 C CNN
+F 0 "P7" H 900 2850 50  0000 C CNN
 F 1 "5V" V 1000 2700 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 900 2700 60  0001 C CNN
 F 3 "" H 900 2700 60  0000 C CNN
 	1    900  2700
 	0    -1   -1   0   
 $EndComp
-$Comp
-L CONN_01X02 P7
-U 1 1 558D36AA
-P 1450 2700
-F 0 "P7" H 1450 2850 50  0000 C CNN
-F 1 "12V" V 1550 2700 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 1450 2700 60  0001 C CNN
-F 3 "" H 1450 2700 60  0000 C CNN
-	1    1450 2700
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1500 2900 1500 3250
 Wire Wire Line
 	950  2900 950  3250
-Text HLabel 850  3250 3    60   UnSpc ~ 0
-VCC
 Text HLabel 1400 3250 3    60   UnSpc ~ 0
 +12V
 Wire Wire Line
 	1400 2900 1400 3250
-Wire Wire Line
-	850  2900 850  3250
 $Comp
 L PWR_FLAG #FLG011
 U 1 1 558D3DFD
@@ -5057,49 +5041,18 @@ F 3 "" H 1250 3000 60  0000 C CNN
 	1    1250 3000
 	1    0    0    -1  
 $EndComp
-$Comp
-L PWR_FLAG #FLG012
-U 1 1 558D3E11
-P 700 3000
-F 0 "#FLG012" H 700 3095 30  0001 C CNN
-F 1 "PWR_FLAG" H 700 3180 30  0000 C CNN
-F 2 "" H 700 3000 60  0000 C CNN
-F 3 "" H 700 3000 60  0000 C CNN
-	1    700  3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	700  3000 700  3100
-Wire Wire Line
-	700  3100 850  3100
-Connection ~ 850  3100
 Wire Wire Line
 	1250 3000 1250 3100
 Wire Wire Line
 	1250 3100 1400 3100
 Connection ~ 1400 3100
 Connection ~ 1500 3100
-$Comp
-L 78L05 U6
-U 1 1 558DC42E
-P 2900 2800
-F 0 "U6" H 3050 2604 60  0000 C CNN
-F 1 "78L33" H 2900 3000 60  0000 C CNN
-F 2 "Discret:LM78LXX" H 2900 2800 60  0001 C CNN
-F 3 "" H 2900 2800 60  0000 C CNN
-	1    2900 2800
-	1    0    0    -1  
-$EndComp
-Text HLabel 2050 2750 0    60   UnSpc ~ 0
-VCC
 Text HLabel 1500 3250 3    60   UnSpc ~ 0
 GND
 Text HLabel 950  3250 3    60   UnSpc ~ 0
 GND
 Text HLabel 2900 3650 3    60   UnSpc ~ 0
 GND
-Text HLabel 3650 2750 2    60   UnSpc ~ 0
-+3.3V
 Wire Wire Line
 	3300 2750 3650 2750
 Wire Wire Line
@@ -5141,4 +5094,94 @@ Connection ~ 2350 2750
 Wire Wire Line
 	3450 2750 3450 2900
 Connection ~ 3450 2750
+$Comp
+L 78L05 U2
+U 1 1 55901EC1
+P 5400 2800
+F 0 "U2" H 5550 2604 60  0000 C CNN
+F 1 "78L33" H 5400 3000 60  0000 C CNN
+F 2 "Discret:LM78XX-TO92" H 5400 2800 60  0001 C CNN
+F 3 "" H 5400 2800 60  0000 C CNN
+	1    5400 2800
+	1    0    0    -1  
+$EndComp
+Text HLabel 5400 3650 3    60   UnSpc ~ 0
+GND
+Text HLabel 6150 2750 2    60   UnSpc ~ 0
++3.3V
+Wire Wire Line
+	5800 2750 6150 2750
+Wire Wire Line
+	5400 3050 5400 3650
+Wire Wire Line
+	4550 2750 5000 2750
+$Comp
+L C C8
+U 1 1 55901ECD
+P 4850 3050
+F 0 "C8" H 4850 3150 40  0000 L CNN
+F 1 "330nF" H 4856 2965 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4888 2900 30  0001 C CNN
+F 3 "" H 4850 3050 60  0000 C CNN
+	1    4850 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 55901ED3
+P 5950 3050
+F 0 "C9" H 5950 3150 40  0000 L CNN
+F 1 "100nF" H 5956 2965 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5988 2900 30  0001 C CNN
+F 3 "" H 5950 3050 60  0000 C CNN
+	1    5950 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3200 5950 3350
+Wire Wire Line
+	5950 3350 4850 3350
+Connection ~ 5400 3350
+Wire Wire Line
+	4850 3350 4850 3200
+Wire Wire Line
+	4850 2750 4850 2900
+Connection ~ 4850 2750
+Wire Wire Line
+	5950 2750 5950 2900
+Connection ~ 5950 2750
+Text HLabel 2050 2750 0    60   UnSpc ~ 0
++12V
+Text HLabel 3650 2750 2    60   UnSpc ~ 0
+VCC
+Text HLabel 4550 2750 0    60   UnSpc ~ 0
+VCC
+$Comp
+L CONN_01X03 P8
+U 1 1 55902DC8
+P 1500 2700
+F 0 "P8" H 1500 2900 50  0000 C CNN
+F 1 "12V" V 1600 2700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 1500 2700 60  0001 C CNN
+F 3 "" H 1500 2700 60  0000 C CNN
+	1    1500 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  2900 850  3200
+Wire Wire Line
+	850  3200 1600 3200
+Wire Wire Line
+	1600 3200 1600 2900
+$Comp
+L LM7805 U1
+U 1 1 55906F15
+P 2900 2800
+F 0 "U1" H 3050 2604 60  0000 C CNN
+F 1 "LM7805" H 2900 3000 60  0000 C CNN
+F 2 "Discret:LM78XX-TO92" H 2900 2800 60  0001 C CNN
+F 3 "" H 2900 2800 60  0000 C CNN
+	1    2900 2800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

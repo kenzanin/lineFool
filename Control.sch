@@ -11,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -36,9 +35,9 @@ EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
 Sheet 3 6
-Title ""
-Date ""
-Rev ""
+Title "KENZANIN LINEFOLLOWER"
+Date "2015-06-28"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -460,7 +459,7 @@ U 1 1 558C3553
 P 6400 2150
 F 0 "DS1" H 5600 2550 40  0000 C CNN
 F 1 "LCD16X2" H 7100 2550 40  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x16" H 6400 2100 35  0001 C CIN
+F 2 "display-lcd:TUXGR_16X2_R2" H 6400 2100 35  0001 C CIN
 F 3 "" H 6400 2150 60  0000 C CNN
 	1    6400 2150
 	-1   0    0    -1  
@@ -483,7 +482,7 @@ U 1 1 558C48A5
 P 6950 4050
 F 0 "RV1" H 6950 3950 50  0000 C CNN
 F 1 "POT" H 6950 4050 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Trimmer-Suntan-TSR-3386P" H 6950 4050 60  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Triwood_RM-065" H 6950 4050 60  0001 C CNN
 F 3 "" H 6950 4050 60  0000 C CNN
 	1    6950 4050
 	-1   0    0    -1  
@@ -501,15 +500,15 @@ Wire Wire Line
 $Comp
 L GND #PWR06
 U 1 1 558C556D
-P 6650 4050
-F 0 "#PWR06" H 6650 4050 30  0001 C CNN
-F 1 "GND" H 6650 3980 30  0001 C CNN
-F 2 "" H 6650 4050 60  0000 C CNN
-F 3 "" H 6650 4050 60  0000 C CNN
-	1    6650 4050
-	0    1    -1   0   
+P 7250 4050
+F 0 "#PWR06" H 7250 4050 30  0001 C CNN
+F 1 "GND" H 7250 3980 30  0001 C CNN
+F 2 "" H 7250 4050 60  0000 C CNN
+F 3 "" H 7250 4050 60  0000 C CNN
+	1    7250 4050
+	0    -1   1    0   
 $EndComp
-Text HLabel 7250 4050 2    60   UnSpc ~ 0
+Text HLabel 6650 4050 0    60   UnSpc ~ 0
 VCC
 Wire Wire Line
 	6700 4050 6650 4050
@@ -549,7 +548,7 @@ U 1 1 558C65D3
 P 5650 3000
 F 0 "R6" V 5730 3000 40  0000 C CNN
 F 1 "1K" V 5657 3001 40  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5580 3000 30  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM15mm" V 5580 3000 30  0001 C CNN
 F 3 "" H 5650 3000 30  0000 C CNN
 	1    5650 3000
 	-1   0    0    -1  

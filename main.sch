@@ -11,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -36,9 +35,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
-Title ""
-Date ""
-Rev ""
+Title "KENZANIN LINEFOLLOWER"
+Date "2015-06-28"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -227,4 +226,8 @@ F 3 "" H 5050 5150 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	5300 5150 5050 5150
+Connection ~ 5200 3850
+Wire Wire Line
+	5200 3850 5200 3000
+Connection ~ 5200 3000
 $EndSCHEMATC

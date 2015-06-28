@@ -11,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -36,9 +35,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 6
-Title ""
-Date ""
-Rev ""
+Title "KENZANIN LINEFOLLOWER"
+Date "2015-06-28"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -2931,7 +2930,7 @@ C5 A0 D4 D6 21 04 CB 34 56 D3 D4 E8 94 43 EA 50 8A E7 2B 9F C3 7F 11 8D F0 59 38
 DA 9C E3 D7 E1 AB BF EA FD 07 62 B6 36 FB 3D 61 C6 AE FF 99 D7 FA 7D 5F 7D 8E 3F 66 CC C3 D1 43 
 FC BE 3D D5 51 7A EF CF B9 F4 3C 34 7D D1 30 37 C2 0E 7F 80 58 F1 33 ED 6A 46 BF 3F CB 91 FE BE 
 6F 63 8E 3F 36 CC D7 84 73 CC F1 9C 31 5F 13 CE 31 C7 73 C6 DC 08 E7 98 E3 39 63 6E 84 73 CC F1 
-9C F1 FF 03 32 A2 CC 28 D8 D1 50 57 00 00 00 00 49 45 4E 44 AE 42 60 82 31 
+9C F1 FF 03 32 A2 CC 28 D8 D1 50 57 00 00 00 00 49 45 4E 44 AE 42 60 82 E5 
 EndData
 $EndBitmap
 $Comp
@@ -2958,13 +2957,13 @@ F 3 "" H 2850 3350 60  0000 C CNN
 $EndComp
 Text HLabel 1950 3700 3    60   UnSpc ~ 0
 +12V
-Text HLabel 2300 3700 3    60   Input ~ 0
+Text HLabel 2750 3700 3    60   Input ~ 0
 PWM01
 Text HLabel 2400 3700 3    60   Input ~ 0
 MA1
 Text HLabel 2500 3700 3    60   Input ~ 0
 MA2
-Text HLabel 2750 3700 3    60   Input ~ 0
+Text HLabel 2300 3700 3    60   Input ~ 0
 PWM02
 Text HLabel 2950 3700 3    60   Input ~ 0
 MB1
@@ -2993,7 +2992,7 @@ L CONN_01X03 P1
 U 1 1 558D6CE8
 P 1950 3350
 F 0 "P1" H 1950 3550 50  0000 C CNN
-F 1 "MA" V 2050 3350 50  0000 C CNN
+F 1 "MP" V 2050 3350 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 1950 3350 60  0001 C CNN
 F 3 "" H 1950 3350 60  0000 C CNN
 	1    1950 3350
