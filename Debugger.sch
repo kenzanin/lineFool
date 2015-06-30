@@ -1,33 +1,5 @@
 EESchema Schematic File Version 2
 LIBS:main-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
 LIBS:main-cache
 LIBS:tcrt5000
 EELAYER 25 0
@@ -4634,11 +4606,11 @@ BC E6 E6 86 D4 51 DE F6 6C 1B 8F C3 63 F6 07 18 8F D3 53 AE 1E 31 05 DE FD 46 A3
 54 E4 60 48 B6 FE E3 84 5A 8B 42 61 ED 0B 15 16 53 2E AE 99 E5 C0 A8 DB 20 4B 7F 3F 47 A7 56 20 
 65 32 A2 50 A1 F7 CC 9B AA E0 07 94 2A 24 E9 56 1E F9 2D CA 38 F0 66 C2 22 FA B3 F1 42 9F C8 F3 
 E8 F7 BF C4 81 63 A2 94 56 3B 1F FA 38 66 32 E2 D3 27 AE AE F2 0B 7E 99 FE 0F F2 E8 67 06 73 94 
-30 EC 00 00 00 00 49 45 4E 44 AE 42 60 82 B8 
+30 EC 00 00 00 00 49 45 4E 44 AE 42 60 82 00 
 EndData
 $EndBitmap
 Text Notes 650  1500 0    60   ~ 0
- ESP8266 ESP11 ESP-11 WIFI MODULE SERIAL WIFI FOR ARDUINO MINSYS, DLL 
+ESP8266 ESP11 ESP-11 WIFI MODULE SERIAL WIFI FOR ARDUINO MINSYS, DLL 
 Text Notes 2200 2050 0    60   ~ 12
 AWAS 3.3V
 Text HLabel 2350 4050 3    60   UnSpc ~ 0

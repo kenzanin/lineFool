@@ -1,33 +1,5 @@
 EESchema Schematic File Version 2
 LIBS:main-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
 LIBS:main-cache
 LIBS:tcrt5000
 EELAYER 25 0
@@ -2930,7 +2902,7 @@ C5 A0 D4 D6 21 04 CB 34 56 D3 D4 E8 94 43 EA 50 8A E7 2B 9F C3 7F 11 8D F0 59 38
 DA 9C E3 D7 E1 AB BF EA FD 07 62 B6 36 FB 3D 61 C6 AE FF 99 D7 FA 7D 5F 7D 8E 3F 66 CC C3 D1 43 
 FC BE 3D D5 51 7A EF CF B9 F4 3C 34 7D D1 30 37 C2 0E 7F 80 58 F1 33 ED 6A 46 BF 3F CB 91 FE BE 
 6F 63 8E 3F 36 CC D7 84 73 CC F1 9C 31 5F 13 CE 31 C7 73 C6 DC 08 E7 98 E3 39 63 6E 84 73 CC F1 
-9C F1 FF 03 32 A2 CC 28 D8 D1 50 57 00 00 00 00 49 45 4E 44 AE 42 60 82 E5 
+9C F1 FF 03 32 A2 CC 28 D8 D1 50 57 00 00 00 00 49 45 4E 44 AE 42 60 82 01 
 EndData
 $EndBitmap
 $Comp
